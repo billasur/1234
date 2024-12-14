@@ -1,0 +1,115 @@
+1. Basic Probability Concepts
+Probability
+
+    Probability is the likelihood or chance of an event happening.
+    It’s a value between 0 and 1, where 0 means the event won’t happen, and 1 means the event will definitely happen.
+
+Event
+
+    An event is any outcome or combination of outcomes from a random experiment.
+        Simple events: Single outcomes (e.g., rolling a 3 on a die).
+        Compound events: Multiple outcomes (e.g., rolling an even number).
+
+Types of Events
+
+    Independent events: The outcome of one event does not affect the other.
+    Dependent events: The outcome of one event affects the outcome of the other.
+    Mutually exclusive events: Two events cannot occur at the same time (e.g., rolling a 3 and a 5 on the same roll of a die).
+    Non-mutually exclusive events: Two events can occur together (e.g., drawing a red card and a heart in a deck of cards).
+
+Conditional Probability
+
+    Conditional probability is the probability of one event occurring given that another event has already occurred.
+        Formula: P(A∣B)=P(A∩B)P(B)P(A∣B)=P(B)P(A∩B)​
+    Bayes' Theorem: A way of updating the probability of an event based on new evidence:
+    P(A∣B)=P(B∣A)⋅P(A)P(B)
+    P(A∣B)=P(B)P(B∣A)⋅P(A)​
+
+2. Expected Value (EV)
+Expected Value (Mean)
+
+    The expected value is the long-term average or the center of a probability distribution.
+    For discrete random variables, the expected value is:
+    E(X)=∑(x⋅P(x))
+    E(X)=∑(x⋅P(x)) where xx represents the outcomes, and P(x)P(x) represents their probabilities.
+
+Example of Expected Value:
+
+    If you roll a fair die, the expected value is the average of all possible outcomes:
+    E(X)=1+2+3+4+5+66=3.5
+    E(X)=61+2+3+4+5+6​=3.5 This means, on average, the result of rolling the die is 3.5.
+
+3. Deviation, Variance, and Standard Deviation
+Variance
+
+    Variance measures how far the numbers are spread out from the mean.
+    Formula:
+    Variance=1N∑(xi−μ)2
+    Variance=N1​∑(xi​−μ)2 where xixi​ represents individual data points, and μμ is the mean.
+    It tells you how much the numbers in a data set vary from the expected value.
+
+Standard Deviation
+
+    The standard deviation is the square root of the variance. It gives the spread of a distribution in the same units as the data.
+    Formula:
+    Standard Deviation=Variance
+    Standard Deviation=Variance
+
+    ​
+
+4. Random Walk
+What is a Random Walk?
+
+    A random walk is a mathematical process where each step taken is determined randomly.
+    In simple cases (like flipping a coin), each step is either a movement to the left or right, and the total position depends on the number of steps and the sequence of outcomes.
+
+Example:
+
+    A person starts at position 0 and flips a fair coin:
+        Heads means move one step to the right (+1).
+        Tails means move one step to the left (-1).
+        After nn flips, their position is the sum of all the individual flips.
+
+Expected Position in Random Walk:
+
+    For a fair coin, the expected position after nn flips is 0, since there is an equal probability of moving left or right.
+
+Variance in Random Walk:
+
+    The variance after nn flips is equal to nn, since each flip contributes a variance of 1 to the total variance.
+
+Standard Deviation in Random Walk:
+
+    The standard deviation of the position after nn flips is the square root of the variance:
+    Standard Deviation=n
+    Standard Deviation=n
+
+    ​
+
+5. Specific Problems Covered
+Example 1: Expected Value of Rolling a Die Twice
+
+    You roll a fair six-sided die twice. What is the expected value of the sum of the rolls?
+        The expected value of one roll is 3.53.5, so the expected value of the sum after two rolls is 3.5+3.5=73.5+3.5=7.
+
+Example 2: Variance of the Sum of Rolls
+
+    You roll a fair six-sided die twice. What is the variance of the sum of the rolls?
+        The variance for one roll is 35121235​, so the variance of the sum is 2×3512=3562×1235​=635​.
+
+Example 3: Probability with Balls (Without Replacement)
+
+    A box contains 5 blue balls and 7 green balls. If 3 balls are drawn without replacement, the probability that all three balls are green is calculated using combinations.
+
+Example 4: Random Walk with Coin Flips
+
+    A person flips a coin nn times. The expected position is 0, and the standard deviation after nn flips is nn
+
+    ​.
+
+Summary
+
+    Probability: The likelihood of an event occurring, ranging from 0 to 1.
+    Expected Value (EV): The average or mean outcome of a random variable.
+    Variance & Standard Deviation: Measures of the spread or dispersion of data points from the mean.
+    Random Walk: A process where each step is determined randomly, and the total position is the sum of all steps.
